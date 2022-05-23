@@ -1,0 +1,79 @@
+plugins {
+    id 'java-library'
+    id 'maven-publish'
+    id 'signing'
+}
+
+group 'io.github.italbytz'
+version '0.2.0'
+
+java {
+    withJavadocJar()
+    withSourcesJar()
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'jdom:jdom:b9'
+    implementation 'io.github.italbytz:freak-core:0.3.5'
+
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
+}
+
+test {
+    useJUnitPlatform()
+}
+
+publishing {
+
+    publications {
+        mavenJava(MavenPublication) {
+            from components.java
+            pom {
+                name = 'freak-gui-core'
+                description = 'GUI Core library of the Free Evolutionary Algorithm Toolkit'
+                url = 'https://github.com/Italbytz/mvn-freak-gui-core'
+                licenses {
+                    license {
+                        name = 'The Apache License, Version 2.0'
+                        url = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+                    }
+                }
+                developers {
+                    developer {
+                        name = 'Robin Nunkesser'
+                        email = 'robin.nunkesser@hshl.de'
+                    }
+                }
+                scm {
+                    connection = 'scm:git:git://github.com/Italbytz/mvn-freak-gui-core.git'
+                    developerConnection = 'scm:git:ssh://github.com/Italbytz/mvn-freak-gui-core.git'
+                    url = 'https://github.com/Italbytz/mvn-freak-gui-core.git'
+                }
+            }
+        }
+    }
+
+    repositories {
+        maven {
+            name="oss"
+            def releasesRepoUrl = uri("https://s01.oss.sonatype.org/service/local/staging/deploy/maven2/")
+            def snapshotsRepoUrl = uri("https://s01.oss.sonatype.org/content/repositories/snapshots/")
+            url = version.endsWith('SNAPSHOT') ? snapshotsRepoUrl : releasesRepoUrl
+            credentials {
+                username = ossrhUsername
+                password = ossrhPassword
+            }
+        }
+    }
+
+}
+
+signing {
+    sign(publishing.publications)
+}
+
