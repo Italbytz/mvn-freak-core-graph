@@ -37,7 +37,6 @@ public class FileSharingConnect extends AbstractActionCheckBox {
 	/**
 	 * Constructor for FileNew.
 	 * @param graphpad
-	 * @param name
 	 */
 	public FileSharingConnect(GPGraphpad graphpad) {
 		super(graphpad);

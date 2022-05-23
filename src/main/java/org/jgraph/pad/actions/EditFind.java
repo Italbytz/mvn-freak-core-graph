@@ -37,7 +37,6 @@ public class EditFind extends EditFindAgain {
 	/**
 	 * Constructor for EditFind.
 	 * @param graphpad
-	 * @param name
 	 */
 	public EditFind(GPGraphpad graphpad) {
 		super(graphpad);

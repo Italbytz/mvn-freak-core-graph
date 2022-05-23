@@ -160,7 +160,7 @@ public abstract class JDialogP extends JDialog {
 	/**
 	 * Sets the {3} attribute of the JDialogP object
 	 *
-	 * @param buttonRectangle The new {3} value
+	 * @param r The new {3} value
 	 */
 	public void setBounds(Rectangle r) {
 		this.setBounds(r.x, r.y, r.width, r.height);

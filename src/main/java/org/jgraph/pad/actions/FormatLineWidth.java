@@ -39,7 +39,6 @@ public class FormatLineWidth extends AbstractActionDefault {
 	/**
 	 * Constructor for FormatLineWidth.
 	 * @param graphpad
-	 * @param name
 	 */
 	public FormatLineWidth(GPGraphpad graphpad) {
 		super(graphpad);

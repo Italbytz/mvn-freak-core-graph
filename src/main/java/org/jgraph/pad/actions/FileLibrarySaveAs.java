@@ -21,7 +21,6 @@ public class FileLibrarySaveAs extends AbstractActionFile {
 	/**
 	 * Constructor for FileLibrarySaveAs.
 	 * @param graphpad
-	 * @param name
 	 */
 	public FileLibrarySaveAs(GPGraphpad graphpad) {
 		super(graphpad);

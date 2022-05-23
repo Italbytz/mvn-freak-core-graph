@@ -45,7 +45,6 @@ import java.util.*;
  *  in a map, but remove the specified entries. The value entry of a
  *  propertyMap is always in sync with the userObject of a GraphCell.
  *  The isMoveable, isAutoSize and isSizeable are used indepedently
- *  (see http://sourceforge.net/forum/forum.php?thread_id=770111&forum_id=140880)
  *
  * @version 1.0 1/1/02
  * @author Gaudenz Alder
@@ -503,7 +502,7 @@ public class GraphConstants {
 	}
 
 	/**
-	 * Replace the keys in <code>map</code> using <code>keyMap</code, which
+	 * Replace the keys in <code>map</code> using <code>keyMap</code>, which
 	 * maps from old to new keys. The value in <code>map</code> must itself
 	 * be a map, and is cloned using <code>cloneMap</code>.
 	 */

@@ -36,7 +36,6 @@ public class FormatTextFontStyleItalic extends AbstractActionDefault {
 	/**
 	 * Constructor for FormatTextFontStyleItalic.
 	 * @param graphpad
-	 * @param name
 	 */
 	public FormatTextFontStyleItalic(GPGraphpad graphpad) {
 		super(graphpad);

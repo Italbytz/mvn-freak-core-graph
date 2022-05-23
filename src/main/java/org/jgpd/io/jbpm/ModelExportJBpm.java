@@ -114,9 +114,6 @@ public class ModelExportJBpm extends ModelExportImpl {
 		fileSave.saveFile();
 	}
 	
-	/**
-	 * @see org.jgpd.io.ModelExportInterface#exportModelXML()
-	 */
 	public String exportModelXML(GPGraph graph)
 	{
 		// Create the necessary parts and package them as a .par

@@ -40,7 +40,6 @@ public class FormatLinePattern extends AbstractActionDefault {
 	/**
 	 * Constructor for FormatLinePattern.
 	 * @param graphpad
-	 * @param name
 	 */
 	public FormatLinePattern(GPGraphpad graphpad) {
 		super(graphpad);

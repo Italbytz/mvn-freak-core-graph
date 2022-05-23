@@ -159,7 +159,6 @@ public class DefaultGraphModelFileFormatXML implements GraphModelFileFormat {
 	/**
 	 * Writes the graph as XML file
 	 *
-	 * @see GraphModelFileFormat#write(String, Hashtable, GPGraph, GraphModel)
 	 */
 	public void write(
 		URL file,
@@ -212,7 +211,6 @@ public class DefaultGraphModelFileFormatXML implements GraphModelFileFormat {
 	 * If this procedure fails the method tempts
 	 * to load without the zipped option.
 	 *
-	 * @see GraphModelFileFormat#read(String, Hashtable, GPGraph)
 	 */
 	public GraphModel read(
 		URL file,

@@ -39,7 +39,6 @@ public class FormatFillNo extends AbstractActionDefault {
 	/**
 	 * Constructor for FormatFillNo.
 	 * @param graphpad
-	 * @param name
 	 */
 	public FormatFillNo(GPGraphpad graphpad) {
 		super(graphpad);

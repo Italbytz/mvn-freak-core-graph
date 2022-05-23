@@ -37,7 +37,6 @@ public class FormatLineQuadratic extends AbstractActionDefault {
 	/**
 	 * Constructor for FormatLineQuadratic.
 	 * @param graphpad
-	 * @param name
 	 */
 	public FormatLineQuadratic(GPGraphpad graphpad) {
 		super(graphpad);

@@ -42,7 +42,6 @@ public class FieldTreeNode extends JGpdTreeNode {
 	/**
 	 * @param cell
 	 * @param tree
-	 * @param allowsChildren
 	 */
 	public FieldTreeNode( Object cell, JTree tree )
 	{

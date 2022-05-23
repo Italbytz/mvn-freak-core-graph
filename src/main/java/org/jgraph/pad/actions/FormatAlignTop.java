@@ -38,7 +38,6 @@ public class FormatAlignTop extends AbstractActionDefault {
 	/**
 	 * Constructor for FormatAlignTop.
 	 * @param graphpad
-	 * @param name
 	 */
 	public FormatAlignTop(GPGraphpad graphpad) {
 		super(graphpad);

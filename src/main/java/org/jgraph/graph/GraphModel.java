@@ -63,8 +63,8 @@ public interface GraphModel {
 	/**
 	 * Returns the root at index <I>index</I> in the model.
 	 * This should not return null if <i>index</i> is a valid
-	 * index for the model (that is <i>index</i> >= 0 &&
-	 * <i>index</i> < getRootCount()).
+	 * index for the model (that is <i>index</i> greater than or equal 0 and
+	 * <i>index</i> less than getRootCount()).
 	 *
 	 * @return  the root of at index <I>index</I>
 	 */
@@ -73,7 +73,7 @@ public interface GraphModel {
 	/**
 	 * Returns the index of <code>root</code> in the model.
 	 * If root is <code>null</code>, returns -1.
-	 * @param parent a root in the model, obtained from this data source
+	 * @param root a root in the model, obtained from this data source
 	 * @return the index of the root in the model, or -1
 	 *    if the parent is <code>null</code>
 	 */
@@ -191,8 +191,8 @@ public interface GraphModel {
 	 * Returns the child of <I>parent</I> at index <I>index</I> in the parent's
 	 * child array.  <I>parent</I> must be a node previously obtained from
 	 * this data source. This should not return null if <i>index</i>
-	 * is a valid index for <i>parent</i> (that is <i>index</i> >= 0 &&
-	 * <i>index</i> < getChildCount(<i>parent</i>)).
+	 * is a valid index for <i>parent</i> (that is <i>index</i> greater than or qqual to 0 and
+	 * <i>index</i> less than getChildCount(<i>parent</i>)).
 	 *
 	 * @param   parent  a node in the tree, obtained from this data source
 	 * @return  the child of <I>parent</I> at index <I>index</I>

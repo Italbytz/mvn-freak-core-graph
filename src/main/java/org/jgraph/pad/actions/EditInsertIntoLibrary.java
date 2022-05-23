@@ -39,7 +39,6 @@ public class EditInsertIntoLibrary extends AbstractActionDefault {
 	/**
 	 * Constructor for EditInsertIntoLibrary.
 	 * @param graphpad
-	 * @param name
 	 */
 	public EditInsertIntoLibrary(GPGraphpad graphpad) {
 		super(graphpad);

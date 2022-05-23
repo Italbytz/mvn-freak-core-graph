@@ -36,7 +36,6 @@ public class ViewScaleZoomIn extends AbstractActionDefault {
 	/**
 	 * Constructor for ViewScaleZoomIn.
 	 * @param graphpad
-	 * @param name
 	 */
 	public ViewScaleZoomIn(GPGraphpad graphpad) {
 		super(graphpad);

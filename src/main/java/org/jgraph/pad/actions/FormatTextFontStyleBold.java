@@ -36,7 +36,6 @@ public class FormatTextFontStyleBold extends AbstractActionDefault {
 	/**
 	 * Constructor for FormatTextFontStyleBold.
 	 * @param graphpad
-	 * @param name
 	 */
 	public FormatTextFontStyleBold(GPGraphpad graphpad) {
 		super(graphpad);

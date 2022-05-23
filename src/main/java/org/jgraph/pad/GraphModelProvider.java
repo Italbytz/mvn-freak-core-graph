@@ -121,7 +121,7 @@ public interface GraphModelProvider {
 	/** Creates a new cell for the corresponding graph model
 	 *
 	 *  @param cellType One of the const values with the prefix CELL_.
-	 * 					 If you need to add you own const values use number > 1000.
+	 * 					 If you need to add you own const values use number greater than 1000.
 	 *  @param userObject The user object for the new Cell
 	 *  @param map The map with the corresponding properties for this cell.
 	 *
@@ -165,7 +165,6 @@ public interface GraphModelProvider {
 	 *
 	 *  @param sourceGraphModel A graph model from this provider.
 	 *  @param otherGraphModelClass A graph model from another provider.
-	 *  @param the new graph model.
 	 */
 	public GraphModel mutateTo(GraphModel sourceGraphModel, Class otherGraphModelClass);
 

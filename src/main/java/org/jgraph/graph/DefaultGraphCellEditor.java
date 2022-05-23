@@ -91,8 +91,6 @@ public class DefaultGraphCellEditor
 	 * specified renderer and a default editor. (Use this constructor
 	 * for normal editing.)
 	 *
-	 * @param tree      a JTree object
-	 * @param renderer  a DefaultTreeCellRenderer object
 	 */
 	public DefaultGraphCellEditor() {
 		this(null);
@@ -103,8 +101,6 @@ public class DefaultGraphCellEditor
 	 * specified renderer and the specified editor. (Use this constructor
 	 * for specialized editing.)
 	 *
-	 * @param tree      a JTree object
-	 * @param renderer  a DefaultTreeCellRenderer object
 	 * @param editor    a TreeCellEditor object
 	 */
 	public DefaultGraphCellEditor(GraphCellEditor editor) {
@@ -315,7 +311,7 @@ public class DefaultGraphCellEditor
 
 	/**
 	 * Returns true if <code>event</code> is null, or it is a MouseEvent
-	 * with a click count > 2 and inHitRegion returns true.
+	 * with a click count greater than 2 and inHitRegion returns true.
 	 */
 	protected boolean canEditImmediately(EventObject event) {
 		if ((event instanceof MouseEvent)
@@ -330,7 +326,7 @@ public class DefaultGraphCellEditor
 	/**
 	 * Should return true if the passed in location is a valid mouse location
 	 * to start editing from. This is implemented to return false if
-	 * <code>x</code> is <= the width of the icon and icon gap displayed
+	 * <code>x</code> is less than the width of the icon and icon gap displayed
 	 * by the renderer. In other words this returns true if the user
 	 * clicks over the text part displayed by the renderer, and false
 	 * otherwise.

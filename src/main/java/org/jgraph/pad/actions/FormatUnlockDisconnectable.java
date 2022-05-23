@@ -38,7 +38,6 @@ public class FormatUnlockDisconnectable extends AbstractActionDefault {
 	/**
 	 * Constructor for FormatUnlockDisconnectable.
 	 * @param graphpad
-	 * @param name
 	 */
 	public FormatUnlockDisconnectable(GPGraphpad graphpad) {
 		super(graphpad);

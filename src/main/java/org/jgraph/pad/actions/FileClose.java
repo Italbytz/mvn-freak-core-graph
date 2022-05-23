@@ -35,7 +35,6 @@ public class FileClose extends AbstractActionDefault {
 	/**
 	 * Constructor for FileClose.
 	 * @param graphpad
-	 * @param name
 	 */
 	public FileClose(GPGraphpad graphpad) {
 		super(graphpad);

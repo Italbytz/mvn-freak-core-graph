@@ -986,7 +986,7 @@ public class GraphLayoutCache
 		* Constructs a GraphViewEdit. This modifies the attributes
 		* of the specified views and may be used to notify UndoListeners.
 		*
-		* @param viewAttributes the map that defines the new attributes
+		* @param nested the map that defines the new attributes
 		*/
 		public GraphViewEdit(Map nested) {
 			this(nested, null, null);
@@ -1005,7 +1005,7 @@ public class GraphLayoutCache
 		* sequent edits (implicit changes to the view, such as
 		* removing a mapping, hiding a view or the like).
 		*
-		* @param viewAttributes the map that defines the new attributes
+		* @param attributes the map that defines the new attributes
 		*/
 		public GraphViewEdit(
 			Map attributes,
@@ -1124,7 +1124,7 @@ public class GraphLayoutCache
 	 * and the routing changes from unrouted to routed.
 	 * In this case the points in the view are already routed
 	 * according to the new scheme when written to the command
-	 * history (-> no undo).
+	 * history ( no undo).
 	 */
 	protected Map handleAttributes(Map attributes) {
 		Map undo = new Hashtable();
@@ -1178,8 +1178,8 @@ public class GraphLayoutCache
 		 * of the specified cells and may be used to notify UndoListeners.
 		 *
 		 * @param source the source of the change (the view)
-		 * @param changed the cellviews that changed
-		 * @param viewAttributes the map that defines the new attributes
+		 * @param cells the cellviews that changed
+		 * @param layer the map that defines the new attributes
 		 */
 		public GraphViewLayerEdit(Object source, Object[] cells, int layer) {
 			changeSource = source;

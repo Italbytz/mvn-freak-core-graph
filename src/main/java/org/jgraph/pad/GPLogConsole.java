@@ -36,10 +36,7 @@ import java.net.URLEncoder;
 
 
 /** Shows the System.in and System.out in a nice JFrame.
- *
- *  The Frame looks like this:<br>
- *  <img src="doc-files/GPLogConsole.jpg">
- *
+ **
  * @author Thomas Genssler (FZI)
  * @author Sven Luzar*/
 public class GPLogConsole extends JFrame {

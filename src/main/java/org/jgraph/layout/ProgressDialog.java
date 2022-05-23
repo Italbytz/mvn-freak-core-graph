@@ -328,7 +328,7 @@ public class ProgressDialog extends JDialog {
 
 	/** sets the cancel button enabled or not
 	 *
-	 *  @param visible the parameter specifies state
+	 *  @param enabled the parameter specifies state
 	 */
 	public void setCancelEnabled(boolean enabled) {
 		cmdCancel.setEnabled(enabled);

@@ -38,7 +38,6 @@ public class FormatRoutingNo extends AbstractActionDefault {
 	/**
 	 * Constructor for FormatRoutingNo.
 	 * @param graphpad
-	 * @param name
 	 */
 	public FormatRoutingNo(GPGraphpad graphpad) {
 		super(graphpad);

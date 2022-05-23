@@ -40,7 +40,6 @@ public class GraphBackgroundColor extends AbstractActionDefault {
 	/**
 	 * Constructor for GraphBackgroundColor.
 	 * @param graphpad
-	 * @param name
 	 */
 	public GraphBackgroundColor(GPGraphpad graphpad) {
 		super(graphpad);

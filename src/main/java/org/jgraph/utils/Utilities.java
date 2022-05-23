@@ -511,7 +511,6 @@ public final class Utilities {
 	/**
 	 * Description of the Method
 	 *
-	 * @param fileName  Description of Parameter
 	 * @return          Description of the Returned Value
 	 */
 	public static final Properties readPropertiesFromFile(Frame parentFrame, File file) {
@@ -572,12 +571,6 @@ public final class Utilities {
 	}
 
 	// =========================================================================
-	/**
-	 * Description of the Method
-	 *
-	 * @param properties  Description of Parameter
-	 * @param fileName    Description of Parameter
-	 */
 	public static final void writePropertiesToFile(Frame parentFrame, Properties properties, File file, String fileHeader) {
 		try {
 			writePropertiesToFile(parentFrame, properties, file.getAbsolutePath(), fileHeader);

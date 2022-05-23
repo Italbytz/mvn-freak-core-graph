@@ -38,7 +38,6 @@ public class FilePageFormat extends AbstractActionDefault {
 	/**
 	 * Constructor for FilePageFormat.
 	 * @param graphpad
-	 * @param name
 	 */
 	public FilePageFormat(GPGraphpad graphpad) {
 		super(graphpad);

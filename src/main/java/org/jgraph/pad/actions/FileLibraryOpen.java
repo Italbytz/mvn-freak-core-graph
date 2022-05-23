@@ -39,7 +39,6 @@ public class FileLibraryOpen extends AbstractActionFile {
 	/**
 	 * Constructor for FileLibraryOpen.
 	 * @param graphpad
-	 * @param name
 	 */
 	public FileLibraryOpen(GPGraphpad graphpad) {
 		super(graphpad);

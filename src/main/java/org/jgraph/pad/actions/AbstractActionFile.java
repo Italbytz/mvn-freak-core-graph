@@ -20,7 +20,6 @@ public abstract class AbstractActionFile extends AbstractActionDefault {
 	/**
 	 * Constructor for AbstractActionFile.
 	 * @param graphpad
-	 * @param name
 	 */
 	public AbstractActionFile(GPGraphpad graphpad) {
 		super(graphpad);

@@ -34,7 +34,7 @@ package org.jgpd.io.jbpm.definition;
 
 import java.io.Serializable;
 
-public final class EventType extends Enum implements Serializable {
+public final class EventType extends org.jgpd.lang.Enum implements Serializable {
   
   public static final EventType PROCESS_START = new EventType( "process-start" );
   public static final EventType PROCESS_END = new EventType( "process-end" );

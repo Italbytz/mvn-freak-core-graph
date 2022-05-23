@@ -29,18 +29,10 @@ public class FreakEdge extends DefaultEdge {
 		this.targetPort = targetPort;
 	}
 
-	/**
-	 * @return
-	 * @uml.property  name="sourcePort"
-	 */
 	public FreakPort getSourcePort() {
 		return sourcePort;
 	}
 
-	/**
-	 * @return
-	 * @uml.property  name="targetPort"
-	 */
 	public FreakPort getTargetPort() {
 		return targetPort;
 	}

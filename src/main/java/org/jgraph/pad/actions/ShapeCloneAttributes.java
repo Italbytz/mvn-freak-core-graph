@@ -36,7 +36,6 @@ public class ShapeCloneAttributes extends AbstractActionDefault {
 	/**
 	 * Constructor for ShapeCloneAttributes.
 	 * @param graphpad
-	 * @param name
 	 */
 	public ShapeCloneAttributes(GPGraphpad graphpad) {
 		super(graphpad);

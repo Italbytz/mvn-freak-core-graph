@@ -289,10 +289,6 @@ public class FreakGraphModel extends DefaultGraphModel implements PortsChangedEv
 			cell.refreshFloatingPorts();
 		}
 	}
-	/**
-	 * @return
-	 * @uml.property  name="operatorMapper"
-	 */
 	public Map getOperatorMapper() {
 		return operatorMapper;
 	}

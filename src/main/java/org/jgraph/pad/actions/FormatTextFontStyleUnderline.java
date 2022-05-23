@@ -36,7 +36,6 @@ public class FormatTextFontStyleUnderline extends AbstractActionDefault {
 	/**
 	 * Constructor for FormatTextFontStyleUnderline.
 	 * @param graphpad
-	 * @param name
 	 */
 	public FormatTextFontStyleUnderline(GPGraphpad graphpad) {
 		super(graphpad);

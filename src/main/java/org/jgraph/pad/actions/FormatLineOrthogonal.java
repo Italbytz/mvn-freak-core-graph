@@ -37,7 +37,6 @@ public class FormatLineOrthogonal extends AbstractActionDefault {
 	/**
 	 * Constructor for FormatLineOrthogonal.
 	 * @param graphpad
-	 * @param name
 	 */
 	public FormatLineOrthogonal(GPGraphpad graphpad) {
 		super(graphpad);

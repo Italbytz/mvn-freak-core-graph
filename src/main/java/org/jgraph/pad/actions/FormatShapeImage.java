@@ -40,7 +40,6 @@ public class FormatShapeImage extends AbstractActionFile {
 	/**
 	 * Constructor for FormatShapeImage.
 	 * @param graphpad
-	 * @param name
 	 */
 	public FormatShapeImage(GPGraphpad graphpad) {
 		super(graphpad);

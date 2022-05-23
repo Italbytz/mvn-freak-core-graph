@@ -18,7 +18,7 @@ repositories {
 
 dependencies {
     implementation 'jdom:jdom:b9'
-    implementation 'io.github.italbytz:freak-core:0.3.5'
+    implementation 'io.github.italbytz:freak-core:0.3.6'
 
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
@@ -34,9 +34,9 @@ publishing {
         mavenJava(MavenPublication) {
             from components.java
             pom {
-                name = 'freak-gui-core'
-                description = 'GUI Core library of the Free Evolutionary Algorithm Toolkit'
-                url = 'https://github.com/Italbytz/mvn-freak-gui-core'
+                name = 'freak-core-graph'
+                description = 'Core graph library of the Free Evolutionary Algorithm Toolkit'
+                url = 'https://github.com/Italbytz/mvn-freak-core-graph'
                 licenses {
                     license {
                         name = 'The Apache License, Version 2.0'
@@ -50,9 +50,9 @@ publishing {
                     }
                 }
                 scm {
-                    connection = 'scm:git:git://github.com/Italbytz/mvn-freak-gui-core.git'
-                    developerConnection = 'scm:git:ssh://github.com/Italbytz/mvn-freak-gui-core.git'
-                    url = 'https://github.com/Italbytz/mvn-freak-gui-core.git'
+                    connection = 'scm:git:git://github.com/Italbytz/mvn-freak-core-graph.git'
+                    developerConnection = 'scm:git:ssh://github.com/Italbytz/mvn-freak-core-graph.git'
+                    url = 'https://github.com/Italbytz/mvn-freak-core-graph.git'
                 }
             }
         }

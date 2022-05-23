@@ -41,7 +41,6 @@ public class GraphArrange extends AbstractActionDefault {
 	/**
 	 * Constructor for GraphArrange.
 	 * @param graphpad
-	 * @param name
 	 */
 	public GraphArrange(GPGraphpad graphpad) {
 		super(graphpad);

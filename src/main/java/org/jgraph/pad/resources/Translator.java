@@ -134,7 +134,7 @@ public class Translator {
 	*  the key but not null.
 	*
 	*  @param sKey Key for the localized String.
-	*  @param oValues Object array for placeholders.
+	*  @param values Object array for placeholders.
 	*
 	*  @see MessageFormat#format(String, Object[])
 	*/
@@ -149,9 +149,6 @@ public class Translator {
 	 *  if logNotFoundResources is true.
 	 *
 	 *  @param sKey Key for the localized String.
-	 *  @param logNotFoundResources
-	 *         if true and the key wasn't found a message
-	 *         will print on the System.err.
 	 *  @param oValues Object array for placeholders.
 	 *
 	 *  @see MessageFormat#format(String, Object[])

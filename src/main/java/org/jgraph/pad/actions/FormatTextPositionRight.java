@@ -38,7 +38,6 @@ public class FormatTextPositionRight extends AbstractActionDefault {
 	/**
 	 * Constructor for FormatTextPositionRight.
 	 * @param graphpad
-	 * @param name
 	 */
 	public FormatTextPositionRight(GPGraphpad graphpad) {
 		super(graphpad);

@@ -46,10 +46,6 @@ public class FreakPort extends DefaultPort {
 		}
 	}
 
-	/**
-	 * @return  the port
-	 * @uml.property  name="port"
-	 */
 	public Port getPort() {
 		return port;
 	}

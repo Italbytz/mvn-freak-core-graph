@@ -306,7 +306,7 @@ public class ConnectionSet implements Serializable {
 		/**
 		 * Two connections are equal if they represent the source
 		 * or target of the same edge. That is, if <p>
-		 * c1.edge == c2.edge && c1.isSource == c2.isSource.
+		 * c1.edge is equal to c2.edge and c1.isSource is equal to c2.isSource.
 		 */
 		public boolean equals(Object obj) {
 			if (obj instanceof Connection) {

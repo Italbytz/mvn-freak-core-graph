@@ -34,14 +34,12 @@ public class AnnealingLayoutAlgorithm implements LayoutAlgorithm, GraphModelList
      * Key used only with clusters. Under this key a cluster has an ArrayList.
      * This list is filled with the clustered vertices.
      * @see #clusterGraph()
-     * @see #moveVerticeToCluster(CellView,CellView)
      */
     public final static String KEY_CLUSTERED_VERTICES = "Clustered Vertices";
     /**
      * Key used only with clusters. Under this key vertices have the cluster
      * they belong to.
      * @see #clusterGraph()
-     * @see #moveVerticeToCluster(CellView,CellView)
      */
     public final static String KEY_CLUSTER            = "Cluster";
     /**
@@ -49,7 +47,6 @@ public class AnnealingLayoutAlgorithm implements LayoutAlgorithm, GraphModelList
      * indicating that this vertice is a cluster (clusters are 
      * VertexView-instances like every other cell).
      * @see #clusterGraph() 
-     * @see #isCluster()
      */
     public final static String KEY_IS_CLUSTER         = "is Cluster";
     /**
@@ -1914,8 +1911,6 @@ public class AnnealingLayoutAlgorithm implements LayoutAlgorithm, GraphModelList
  * {@link #KEY_CLUSTER_INIT_POSITION}.
  * 
  * @see #declusterGraph()
- * @see #computeClusterPosition(CellView)
- * @see #moveVerticeToCluster(CellView)
  */
     protected void clusterGraph(){
         //initialisation
@@ -2137,7 +2132,7 @@ public class AnnealingLayoutAlgorithm implements LayoutAlgorithm, GraphModelList
 /******************************************************************************/
 /**
  * Returns <code><b>true</b></code> when a cell is a cluster, else 
- * <code<b>false</b></code>. A cell is a cluster when it has under it's 
+ * <code><b>false</b></code>. A cell is a cluster when it has under it's
  * attributes a attribute with the boolean value <code><b>true</b></code> under
  * the key {@link #KEY_IS_CLUSTER}.
  * 

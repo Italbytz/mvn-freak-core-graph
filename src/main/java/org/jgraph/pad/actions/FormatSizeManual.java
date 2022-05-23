@@ -37,7 +37,6 @@ public class FormatSizeManual extends AbstractActionDefault {
 	/**
 	 * Constructor for FormatSizeManual.
 	 * @param graphpad
-	 * @param name
 	 */
 	public FormatSizeManual(GPGraphpad graphpad) {
 		super(graphpad);

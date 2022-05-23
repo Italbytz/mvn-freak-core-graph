@@ -38,7 +38,6 @@ public class FormatLineBezier extends AbstractActionDefault {
 	/**
 	 * Constructor for FormatLineBezier.
 	 * @param graphpad
-	 * @param name
 	 */
 	public FormatLineBezier(GPGraphpad graphpad) {
 		super(graphpad);

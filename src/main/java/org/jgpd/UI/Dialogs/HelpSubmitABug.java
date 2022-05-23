@@ -49,7 +49,7 @@ public class HelpSubmitABug extends AbstractActionDefault {
 		super(graphpad);
 	}
 
-	/** Opens the url <a href="http://sourceforge.net/tracker/?func=add&group_id=90011&atid=592210">http://sourceforge.net/tracker/?func=add&group_id=90011&atid=592210</a>.
+	/**
 	 * 
 	 * @see java.awt.event.ActionListener#actionPerformed(ActionEvent)
 	 */

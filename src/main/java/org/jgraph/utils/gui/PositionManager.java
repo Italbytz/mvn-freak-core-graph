@@ -122,7 +122,7 @@ public class PositionManager {
 	 *  <li>{@link JSplitPane}</li>
 	 *  </ul>
 	 * 
-	 * @param oComp the concerning container
+	 * @param comp the concerning container
 	 *  
 	 */
 	public static void addComponent(Component comp) {
@@ -302,7 +302,6 @@ public class PositionManager {
 	 *  method, you will get back the value.
 	 * 
 	 * @param comp the component
-	 * @return the above string
 	 */
 	public static void setIntPos(Component comp, String extension, int value) {
 		Preferences p = getPreferences();

@@ -8,16 +8,15 @@ import java.awt.event.ActionEvent;
  * @author sven.luzar
  *
  * To change this generated comment edit the template variable "typecomment":
- * Window>Preferences>Java>Templates.
+ * Window Preferences Java Templates.
  * To enable and disable the creation of type comments go to
- * Window>Preferences>Java>Code Generation.
+ * Window Preferences Java Code Generation.
  */
 public class GraphBackgroundNoImage extends AbstractActionDefault {
 
 	/**
 	 * Constructor for GraphBackgroundNoImage.
 	 * @param graphpad
-	 * @param name
 	 */
 	public GraphBackgroundNoImage(GPGraphpad graphpad) {
 		super(graphpad);

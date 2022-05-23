@@ -44,7 +44,6 @@ public class EditUndo extends AbstractActionDefault {
 	/**
 	 * Constructor for EditUndo.
 	 * @param graphpad
-	 * @param name
 	 */
 	public EditUndo(GPGraphpad graphpad) {
 		super(graphpad);

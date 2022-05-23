@@ -37,7 +37,6 @@ public class FormatStyleNoStartEnd extends AbstractActionDefault {
 	/**
 	 * Constructor for FormatStyleNoStartEnd.
 	 * @param graphpad
-	 * @param name
 	 */
 	public FormatStyleNoStartEnd(GPGraphpad graphpad) {
 		super(graphpad);

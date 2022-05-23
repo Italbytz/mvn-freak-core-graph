@@ -30,9 +30,6 @@ public abstract class JFrameP extends JFrame {
 	boolean hasBeenVisibleAtLeastOnce = false;
 
 
-	/**
-	 * @.todo    persist iconify/maximized attribute
-	 */
 
 	public JFrameP() {
 		super();
@@ -104,7 +101,7 @@ public abstract class JFrameP extends JFrame {
 	/**
 	 *  Sets the bounds attribute of the JFrameP object
 	 *
-	 *@param  buttonRectangle  The new bounds value
+	 *@param  r  The new bounds value
 	 */
 	public void setBounds(Rectangle r) {
 		this.setBounds(r.x, r.y, r.width, r.height);

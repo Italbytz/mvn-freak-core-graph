@@ -42,7 +42,6 @@ public class FormatFillColor extends AbstractActionDefault {
 	/**
 	 * Constructor for FormatFillColor.
 	 * @param graphpad
-	 * @param name
 	 */
 	public FormatFillColor(GPGraphpad graphpad) {
 		super(graphpad);

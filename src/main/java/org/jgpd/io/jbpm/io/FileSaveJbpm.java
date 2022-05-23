@@ -29,7 +29,6 @@ public class FileSaveJbpm extends AbstractActionFile
 	/**
 	 * Constructor for FileSave.
 	 * @param graphpad
-	 * @param name
 	 */
 	public FileSaveJbpm(GPGraphpad graphpad,
 						GPDocument doc,

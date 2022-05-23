@@ -38,7 +38,6 @@ public class FormatUnlockPosition extends AbstractActionDefault {
 	/**
 	 * Constructor for FormatUnlockPosition.
 	 * @param graphpad
-	 * @param name
 	 */
 	public FormatUnlockPosition(GPGraphpad graphpad) {
 		super(graphpad);

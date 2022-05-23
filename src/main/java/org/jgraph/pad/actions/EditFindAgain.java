@@ -38,7 +38,6 @@ public class EditFindAgain extends AbstractActionDefault {
 	/**
 	 * Constructor for EditFindAgain.
 	 * @param graphpad
-	 * @param name
 	 */
 	public EditFindAgain(GPGraphpad graphpad) {
 		super(graphpad);

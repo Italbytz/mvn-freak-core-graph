@@ -45,7 +45,6 @@ import java.util.Map;
 /**
  * This renderer displays entries that implement the CellView interface
  * and supports the following attributes:
- * <li>
  * GraphConstants.POINTS
  * GraphConstants.FONT
  * GraphConstants.OPAQUE
@@ -61,7 +60,6 @@ import java.util.Map;
  * GraphConstants.END
  * GraphConstants.STARTSIZE
  * GraphConstants.ENDSIZE
- * </li>
  *
  * @version 1.0 1/1/02
  * @author Gaudenz Alder
@@ -144,10 +142,10 @@ public class EdgeRenderer
 	 * graph with <code>convertValueToString</code>.
 	 *
 	 * @param   graph the graph that that defines the rendering context.
-	 * @param   value the object that should be rendered.
-	 * @param   selected whether the object is selected.
-	 * @param   hasFocus whether the object has the focus.
-	 * @param   isPreview whether we are drawing a preview.
+	 * @param   view the object that should be rendered.
+	 * @param   sel whether the object is selected.
+	 * @param   focus whether the object has the focus.
+	 * @param   preview whether we are drawing a preview.
 	 * @return	the component used to render the value.
 	 */
 	public Component getRendererComponent(
@@ -271,7 +269,7 @@ public class EdgeRenderer
 	 * key from the cells hashtable and set global variables
 	 * or superclass properties accordingly.
 	 *
-	 * @param   cell to retrieve the attribute values from.
+	 * @param   view to retrieve the attribute values from.
 	 */
 	protected void installAttributes(CellView view) {
 		Map map = view.getAllAttributes();

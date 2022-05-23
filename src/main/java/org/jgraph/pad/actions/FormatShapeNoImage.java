@@ -38,7 +38,6 @@ public class FormatShapeNoImage extends AbstractActionDefault {
 	/**
 	 * Constructor for FormatShapeNoImage.
 	 * @param graphpad
-	 * @param name
 	 */
 	public FormatShapeNoImage(GPGraphpad graphpad) {
 		super(graphpad);

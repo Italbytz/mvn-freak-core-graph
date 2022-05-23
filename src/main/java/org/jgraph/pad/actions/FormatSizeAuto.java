@@ -38,7 +38,6 @@ public class FormatSizeAuto extends AbstractActionDefault {
 	/**
 	 * Constructor for FormatSizeAuto.
 	 * @param graphpad
-	 * @param name
 	 */
 	public FormatSizeAuto(GPGraphpad graphpad) {
 		super(graphpad);

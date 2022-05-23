@@ -37,7 +37,6 @@ public class FileNew extends AbstractActionDefault {
 	/**
 	 * Constructor for FileNew.
 	 * @param graphpad
-	 * @param name
 	 */
 	public FileNew(GPGraphpad graphpad) {
 		super(graphpad);

@@ -38,7 +38,6 @@ public class FormatUnlockSize extends AbstractActionDefault {
 	/**
 	 * Constructor for FormatUnlockSize.
 	 * @param graphpad
-	 * @param name
 	 */
 	public FormatUnlockSize(GPGraphpad graphpad) {
 		super(graphpad);

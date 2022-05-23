@@ -144,7 +144,7 @@ public class DefaultGraphSelectionModel
 	  * the TreeSelectionListeners are notified. If <code>path</code> is
 	  * null, this has the same effect as invoking <code>clearSelection</code>.
 	  *
-	  * @param path new path to select
+	  * @param cell new path to select
 	  */
 	public void setSelectionCell(Object cell) {
 		if (cell == null)
@@ -165,7 +165,7 @@ public class DefaultGraphSelectionModel
 	  * and adding the new paths would make the selection discontiguous,
 	  * the selection is reset to the first TreePath in <code>paths</code>.
 	  *
-	  * @param paths new selection
+	  * @param cells new selection
 	  */
 	public void setSelectionCells(Object[] cells) {
 		if (cells != null) {
@@ -199,7 +199,7 @@ public class DefaultGraphSelectionModel
 	  * in the selection the TreeSelectionListeners are notified. This has
 	  * no effect if <code>path</code> is null.
 	  *
-	  * @param path the new path to add to the current selection
+	  * @param cell the new path to add to the current selection
 	  */
 	public void addSelectionCell(Object cell) {
 		if (cell != null)
@@ -219,7 +219,7 @@ public class DefaultGraphSelectionModel
 	  * otherwise the TreePaths aren't contiguous and the selection becomes
 	  * the first TreePath in <code>paths</code>.
 	  *
-	  * @param path the new path to add to the current selection
+	  * @param cells the new path to add to the current selection
 	  */
 	public void addSelectionCells(Object[] cells) {
 		if (cells != null) {
@@ -252,7 +252,7 @@ public class DefaultGraphSelectionModel
 	  * The TreeSelectionListeners are notified. This has no effect if
 	  * <code>path</code> is null.
 	  *
-	  * @param path the path to remove from the selection
+	  * @param cell the path to remove from the selection
 	  */
 	public void removeSelectionCell(Object cell) {
 		if (cell != null)
@@ -264,7 +264,7 @@ public class DefaultGraphSelectionModel
 	  * are in the selection the TreeSelectionListeners are notified.
 	  * This has no effect if <code>paths</code> is null.
 	  *
-	  * @param path the path to remove from the selection
+	  * @param cells the path to remove from the selection
 	  */
 	public void removeSelectionCells(Object[] cells) {
 		if (cells != null) {

@@ -42,7 +42,6 @@ public class ShapeBestPorts extends AbstractActionDefault {
 	/**
 	 * Constructor for ShapeBestPorts.
 	 * @param graphpad
-	 * @param name
 	 */
 	public ShapeBestPorts(GPGraphpad graphpad) {
 		super(graphpad);

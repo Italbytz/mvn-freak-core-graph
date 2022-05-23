@@ -218,17 +218,11 @@ public class GEMLayoutController implements LayoutController {
 	}
 
 /******************************************************************************/    
-	/**
-	 * @see de.fzi.echidna.layout.LayoutController#isConfigurable()
-	 */
 	public boolean isConfigurable() {
 		return true;
 	}
 
 /******************************************************************************/    
-	/**
-	 * @see de.fzi.echidna.layout.LayoutController#configure()
-	 */
 	public void configure() {
         pushConfig();
         dialog.setVisible(true);
@@ -237,17 +231,11 @@ public class GEMLayoutController implements LayoutController {
 	}
 
 /******************************************************************************/    
-	/**
-	 * @see de.fzi.echidna.layout.LayoutController#getConfiguration()
-	 */
 	public Properties getConfiguration() {
         return configuration;
 	}
 
 /******************************************************************************/    
-	/**
-	 * @see de.fzi.echidna.layout.LayoutController#getLayoutAlgorithm()
-	 */
 	public LayoutAlgorithm getLayoutAlgorithm() {
         return new GEMLayoutAlgorithm((AnnealingLayoutAlgorithm)optimizeController.getLayoutAlgorithm());
 	}

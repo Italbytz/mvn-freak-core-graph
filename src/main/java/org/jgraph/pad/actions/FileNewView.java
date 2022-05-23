@@ -37,7 +37,6 @@ public class FileNewView extends AbstractActionFile {
 	/**
 	 * Constructor for FileNewView.
 	 * @param graphpad
-	 * @param name
 	 */
 	public FileNewView(GPGraphpad graphpad) {
 		super(graphpad);

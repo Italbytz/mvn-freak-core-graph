@@ -36,7 +36,6 @@ public class FormatTextFontStyleNormal extends AbstractActionDefault {
 	/**
 	 * Constructor for FormatTextFontStyleNormal.
 	 * @param graphpad
-	 * @param name
 	 */
 	public FormatTextFontStyleNormal(GPGraphpad graphpad) {
 		super(graphpad);

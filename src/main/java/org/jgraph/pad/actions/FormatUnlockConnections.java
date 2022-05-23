@@ -38,7 +38,6 @@ public class FormatUnlockConnections extends AbstractActionDefault {
 	/**
 	 * Constructor for FormatUnlockConnections.
 	 * @param graphpad
-	 * @param name
 	 */
 	public FormatUnlockConnections(GPGraphpad graphpad) {
 		super(graphpad);

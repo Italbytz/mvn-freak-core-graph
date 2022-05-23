@@ -33,9 +33,6 @@ public class StartStateImpl extends ActivityStateImpl implements StartState {
 		super(node);
 	}
 	
-	/**
-	 * @see org.jgpd.io.JGpdModelNode#propPanelModel(JTable[], DefaultTableModel[])
-	 */
 	public PropPanelConfig propPanelModel(JTable[] table,
 	                                      JGpdTableModel[] tableModel)
 	{

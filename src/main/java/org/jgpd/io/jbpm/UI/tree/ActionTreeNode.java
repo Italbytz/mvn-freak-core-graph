@@ -42,7 +42,7 @@ public class ActionTreeNode extends JGpdTreeNode {
 	
 	/**
 	 * @param cell
-	 * @param allowsChildren
+	 * @param tree
 	 */
 	public ActionTreeNode(Object cell, JTree tree)
 	{

@@ -440,7 +440,6 @@ implements CellViewFactory, Scrollable, Accessible, Serializable {
 	  * the specified data model using the specified view.
 	  *
 	  * @param model  the <code>GraphModel</code> to use as the data model
-	  * @param view  the <code>GraphLayoutCache</code> to use as the view
 	  */
 	public JGraph(GraphModel model, BasicMarqueeHandler mh) {
 		this(model, null, mh);
@@ -477,7 +476,7 @@ implements CellViewFactory, Scrollable, Accessible, Serializable {
 	//
 
 	/**
-	 * Returns the L&F object that renders this component.
+	 * Returns the L and F object that renders this component.
 	 * @return the GraphUI object that renders this component
 	 */
 	public GraphUI getUI() {
@@ -485,8 +484,8 @@ implements CellViewFactory, Scrollable, Accessible, Serializable {
 	}
 
 	/**
-	 * Sets the L&F object that renders this component.
-	 * @param ui the GraphUI L&F object
+	 * Sets the L and F object that renders this component.
+	 * @param ui the GraphUI L and F object
 	 * @see javax.swing.UIDefaults#getUI(JComponent)
 	 *
 	 */
@@ -502,7 +501,7 @@ implements CellViewFactory, Scrollable, Accessible, Serializable {
 	}
 
 	/**
-	 * Notification from the <code>UIManager</code> that the L&F has changed.
+	 * Notification from the <code>UIManager</code> that the L and F has changed.
 	 * Replaces the current UI object with the latest version from the
 	 * <code>UIManager</code>. Subclassers can override this to support
 	 * different GraphUIs.
@@ -515,7 +514,7 @@ implements CellViewFactory, Scrollable, Accessible, Serializable {
 	}
 
 	/**
-	 * Returns the name of the L&F class that renders this component.
+	 * Returns the name of the L and F class that renders this component.
 	 * @return the string "GraphUI"
 	 * @see JComponent#getUIClassID
 	 *
@@ -759,7 +758,6 @@ implements CellViewFactory, Scrollable, Accessible, Serializable {
 
 	/**
 	 * Returns the given point applied to the grid.
-	 * @param p a point in screen coordinates.
 	 * @return the same point applied to the grid.
 	 */
 	public Dimension snap(Dimension d) {
@@ -1427,7 +1425,7 @@ implements CellViewFactory, Scrollable, Accessible, Serializable {
 	 * Note: Updates the GraphLayoutCache's model using setModel if the
 	 * GraphLayoutCache points to an other model than this graph. <p>
 	 * Fires a property change for the GRAPH_LAYOUT_CACHE_PROPERTY.
-	 * @param newView the <code>GraphLayoutCache</code> that is to provide the view-data
+	 * @param newLayoutCache the <code>GraphLayoutCache</code> that is to provide the view-data
 	 */
 	public void setGraphLayoutCache(GraphLayoutCache newLayoutCache) {
 		GraphLayoutCache oldLayoutCache = graphLayoutCache;

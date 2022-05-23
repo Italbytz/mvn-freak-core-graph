@@ -38,7 +38,6 @@ public class FormatLockNotConnectable extends AbstractActionDefault {
 	/**
 	 * Constructor for FormatLockNotConnectable.
 	 * @param graphpad
-	 * @param name
 	 */
 	public FormatLockNotConnectable(GPGraphpad graphpad) {
 		super(graphpad);

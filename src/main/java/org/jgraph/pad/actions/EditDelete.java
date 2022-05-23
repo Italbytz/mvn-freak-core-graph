@@ -36,7 +36,6 @@ public class EditDelete extends AbstractActionDefault {
 	/**
 	 * Constructor for EditDelete.
 	 * @param graphpad
-	 * @param name
 	 */
 	public EditDelete(GPGraphpad graphpad) {
 		super(graphpad);

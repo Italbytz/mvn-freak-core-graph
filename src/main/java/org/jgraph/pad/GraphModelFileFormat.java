@@ -84,7 +84,7 @@ public interface GraphModelFileFormat {
 	/** Reads the graph from the filename and returns the
 	 *  new model for the graph.
 	 *
-	 *  @param filename The URL for the file
+	 *  @param file The URL for the file
 	 *  @param properties The properties for the read process
 	 *  @param gpGraph The current Graph
 	 *  @return The new Graph model or null to cancel the load

@@ -39,7 +39,6 @@ public class FileExit extends AbstractActionDefault {
 	/**
 	 * Constructor for FileExit.
 	 * @param graphpad
-	 * @param name
 	 */
 	public FileExit(GPGraphpad graphpad) {
 		super(graphpad);

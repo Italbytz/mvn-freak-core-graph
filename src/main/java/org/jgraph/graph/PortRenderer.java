@@ -41,10 +41,8 @@ import java.io.Serializable;
 /**
  * This renderer displays entries that implement the CellView interface
  * and supports the following attributes:
- * <li>
  * GraphConstants.OFFSET
  * GraphConstants.ABSOLUTE
- * </li
  * @version 1.0 28/11/01
  * @author Gaudenz Alder
  */
@@ -76,10 +74,10 @@ public class PortRenderer
 	 * graph with <code>convertValueToString</code>.
 	 *
 	 * @param   graph the graph that that defines the rendering context.
-	 * @param   value the object that should be rendered.
-	 * @param   selected whether the object is selected.
-	 * @param   hasFocus whether the object has the focus.
-	 * @param   isPreview whether we are drawing a preview.
+	 * @param   view the object that should be rendered.
+	 * @param   sel whether the object is selected.
+	 * @param   focus whether the object has the focus.
+	 * @param   preview whether we are drawing a preview.
 	 * @return	the component used to render the value.
 	 */
 	public Component getRendererComponent(

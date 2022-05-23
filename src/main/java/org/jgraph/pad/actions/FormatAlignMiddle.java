@@ -38,7 +38,6 @@ public class FormatAlignMiddle extends AbstractActionDefault {
 	/**
 	 * Constructor for FormatAlignMiddle.
 	 * @param graphpad
-	 * @param name
 	 */
 	public FormatAlignMiddle(GPGraphpad graphpad) {
 		super(graphpad);

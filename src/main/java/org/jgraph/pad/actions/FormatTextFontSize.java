@@ -37,7 +37,6 @@ public class FormatTextFontSize extends AbstractActionDefault {
 	/**
 	 * Constructor for FormatTextFontSize.
 	 * @param graphpad
-	 * @param name
 	 */
 	public FormatTextFontSize(GPGraphpad graphpad) {
 		super(graphpad);

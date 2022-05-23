@@ -329,7 +329,7 @@ public class GPGraph extends JGraph {
 	}
 
 	/**
-	 * Notification from the <code>UIManager</code> that the L&F has changed.
+	 * Notification from the <code>UIManager</code> that the L and F has changed.
 	 * Replaces the current UI object with the latest version from the
 	 * <code>UIManager</code>. Subclassers can override this to support
 	 * different GraphUIs.

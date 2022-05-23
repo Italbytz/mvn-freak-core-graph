@@ -39,7 +39,6 @@ public class FormatStyleStartSize extends AbstractActionDefault {
 	/**
 	 * Constructor for FormatStyleStartSize.
 	 * @param graphpad
-	 * @param name
 	 */
 	public FormatStyleStartSize(GPGraphpad graphpad) {
 		super(graphpad);

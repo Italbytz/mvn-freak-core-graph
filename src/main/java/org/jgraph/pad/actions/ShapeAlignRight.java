@@ -45,7 +45,6 @@ public class ShapeAlignRight extends AbstractActionDefault {
 	/**
 	 * Constructor for ShapeAlignRight.
 	 * @param graphpad
-	 * @param name
 	 */
 	public ShapeAlignRight(GPGraphpad graphpad) {
 		super(graphpad);

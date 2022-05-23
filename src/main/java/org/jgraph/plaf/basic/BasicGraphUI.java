@@ -62,7 +62,7 @@ import java.io.Serializable;
 import java.util.*;
 
 /**
- * The basic L&F for a graph data structure.
+ * The basic L and F for a graph data structure.
  *
  * @version 1.0 1/1/02
  * @author Gaudenz Alder
@@ -1826,7 +1826,7 @@ public class BasicGraphUI extends GraphUI implements Serializable {
 
 		/**
 		 * Indicates whether this handle has started drag and drop.
-		 * Note: isDragging => isMoving.
+		 * Note: isDragging gt isMoving.
 		 */
 		protected boolean isDragging = false;
 
@@ -2805,7 +2805,7 @@ public class BasicGraphUI extends GraphUI implements Serializable {
 
 	/**
 	 * Sets the mode of the snapSelectedView drag operation.
-	 * @param bSnapToGrid specifies if the snap-to-grid mode should be applied during a drag operation.
+	 * @param snapSelectedView specifies if the snap-to-grid mode should be applied during a drag operation.
 	 * If it is enabled,  the view, that is returned by the findViewForPoint(Point pt),
 	 * will be snapped to the grid lines. <br>
 	 * By default, findViewForPoint() returns the first view from the GraphContext whose bounds intersect with snap proximity of a mouse pointer.

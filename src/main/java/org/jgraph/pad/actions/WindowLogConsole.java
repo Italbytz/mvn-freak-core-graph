@@ -35,7 +35,6 @@ public class WindowLogConsole extends AbstractActionDefault {
 	/**
 	 * Constructor for WindowLogConsole.
 	 * @param graphpad
-	 * @param name
 	 */
 	public WindowLogConsole(GPGraphpad graphpad) {
 		super(graphpad);

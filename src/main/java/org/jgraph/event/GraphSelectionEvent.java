@@ -117,7 +117,7 @@ public class GraphSelectionEvent extends EventObject {
 	 * Returns true if the cell identified by <code>index</code> was added to
 	 * the selection. A return value of false means the cell was in the
 	 * selection but is no longer in the selection. This will raise if
-	 * index < 0 || >= <code>getPaths</code>.length.
+	 * index less than 0 or  greater than or equal to <code>getPaths</code>.length.
 	 *
 	 * @since 1.3
 	 */

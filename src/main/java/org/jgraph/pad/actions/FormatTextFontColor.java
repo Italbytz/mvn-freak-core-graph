@@ -41,7 +41,6 @@ public class FormatTextFontColor extends AbstractActionDefault {
 	/**
 	 * Constructor for FormatTextFontColor.
 	 * @param graphpad
-	 * @param name
 	 */
 	public FormatTextFontColor(GPGraphpad graphpad) {
 		super(graphpad);

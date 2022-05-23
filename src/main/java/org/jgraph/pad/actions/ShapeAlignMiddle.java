@@ -45,7 +45,6 @@ public class ShapeAlignMiddle extends AbstractActionDefault {
 	/**
 	 * Constructor for ShapeAlignMiddle.
 	 * @param graphpad
-	 * @param name
 	 */
 	public ShapeAlignMiddle(GPGraphpad graphpad) {
 		super(graphpad);

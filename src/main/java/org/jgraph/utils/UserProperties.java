@@ -123,7 +123,7 @@ public class UserProperties extends Properties {
 	 * Sets the {3} attribute of the UserProperties object
 	 *
 	 * @param key The new {3} value
-	 * @param buttonRectangle The new {3} value
+	 * @param r The new {3} value
 	 */
 	public void setRect(String key, Rectangle r) {
 		String val = r.getX() + "," + r.getY() + "," + r.getWidth() + "," + r.getHeight();

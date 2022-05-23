@@ -42,7 +42,6 @@ public class FileOpen extends AbstractActionFile {
 	/**
 	 * Constructor for FileOpen.
 	 * @param graphpad
-	 * @param name
 	 */
 	public FileOpen(GPGraphpad graphpad) {
 		super(graphpad);

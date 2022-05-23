@@ -20,7 +20,6 @@ public class FileSave extends AbstractActionFile {
 	/**
 	 * Constructor for FileSave.
 	 * @param graphpad
-	 * @param name
 	 */
 	public FileSave(GPGraphpad graphpad)
 	{

@@ -40,7 +40,6 @@ public class FormatBorderColor extends AbstractActionDefault {
 	/**
 	 * Constructor for FormatBorderColor.
 	 * @param graphpad
-	 * @param name
 	 */
 	public FormatBorderColor(GPGraphpad graphpad) {
 		super(graphpad);

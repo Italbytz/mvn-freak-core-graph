@@ -41,7 +41,6 @@ public class FormatShapeImageURL extends AbstractActionFile {
 	/**
 	 * Constructor for FileLibraryOpen.
 	 * @param graphpad
-	 * @param name
 	 */
 	public FormatShapeImageURL(GPGraphpad graphpad) {
 		super(graphpad);

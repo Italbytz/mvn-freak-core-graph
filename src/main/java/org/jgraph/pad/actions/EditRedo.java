@@ -44,7 +44,6 @@ public class EditRedo extends AbstractActionDefault {
 	/**
 	 * Constructor for EditRedo.
 	 * @param graphpad
-	 * @param name
 	 */
 	public EditRedo(GPGraphpad graphpad) {
 		super(graphpad);

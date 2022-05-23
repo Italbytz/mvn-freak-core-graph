@@ -44,9 +44,6 @@ public class BasicGraphDropTargetListener
 
 	/**
 	 * construct a DropTargetAutoScroller
-	 * <P>
-	 * @param c the <code>Component</code>
-	 * @param p the <code>Point</code>
 	 */
 	public BasicGraphDropTargetListener() {
 	}

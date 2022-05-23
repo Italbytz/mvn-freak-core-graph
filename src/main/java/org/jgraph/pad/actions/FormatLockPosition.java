@@ -38,7 +38,6 @@ public class FormatLockPosition extends AbstractActionDefault {
 	/**
 	 * Constructor for FormatLockPosition.
 	 * @param graphpad
-	 * @param name
 	 */
 	public FormatLockPosition(GPGraphpad graphpad) {
 		super(graphpad);

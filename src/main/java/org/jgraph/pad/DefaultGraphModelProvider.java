@@ -130,7 +130,6 @@ public class DefaultGraphModelProvider implements GraphModelProvider {
 	 * Returns the graph model file format objects for this provider
 	 *
 	 * @see DefaultGraphModelFileFormatXML
-	 * @see DefaultGraphModelFileFormatSerial
 	 * @see GraphModelProvider#getGraphModelFileFormats()
 	 */
 	public GraphModelFileFormat[] getGraphModelFileFormats() {

@@ -38,7 +38,6 @@ public class ViewScaleCustom extends AbstractActionDefault {
 	/**
 	 * Constructor for ViewScaleCustom.
 	 * @param graphpad
-	 * @param name
 	 */
 	public ViewScaleCustom(GPGraphpad graphpad) {
 		super(graphpad);

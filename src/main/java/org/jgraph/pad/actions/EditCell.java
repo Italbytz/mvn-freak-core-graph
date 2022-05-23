@@ -36,7 +36,6 @@ public class EditCell extends AbstractActionDefault {
 	/**
 	 * Constructor for EditCellAction.
 	 * @param graphpad
-	 * @param name
 	 */
 	public EditCell(GPGraphpad graphpad) {
 		super(graphpad);

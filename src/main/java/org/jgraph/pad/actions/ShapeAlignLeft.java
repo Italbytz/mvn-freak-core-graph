@@ -45,7 +45,6 @@ public class ShapeAlignLeft extends AbstractActionDefault {
 	/**
 	 * Constructor for ShapeAlignLeft.
 	 * @param graphpad
-	 * @param name
 	 */
 	public ShapeAlignLeft(GPGraphpad graphpad) {
 		super(graphpad);

@@ -36,7 +36,6 @@ public class ViewScaleZoomOut extends AbstractActionDefault {
 	/**
 	 * Constructor for ViewScaleZoomOut.
 	 * @param graphpad
-	 * @param name
 	 */
 	public ViewScaleZoomOut(GPGraphpad graphpad) {
 		super(graphpad);

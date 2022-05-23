@@ -23,7 +23,6 @@ public class GraphApplyLayoutAlgorithm extends AbstractActionDefault {
 	 * Constructor for GraphApplyLayoutAlgorithm.
 	 * 
 	 * @param graphpad
-	 * @param name
 	 */
 	public GraphApplyLayoutAlgorithm(GPGraphpad graphpad) {
 		super(graphpad);

@@ -40,7 +40,6 @@ public class FormatLineColor extends AbstractActionDefault {
 	/**
 	 * Constructor for FormatLineColor.
 	 * @param graphpad
-	 * @param name
 	 */
 	public FormatLineColor(GPGraphpad graphpad) {
 		super(graphpad);

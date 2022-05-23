@@ -19,7 +19,6 @@ public class GraphBackgroundImage extends AbstractActionFile {
 	/**
 	 * Constructor for GraphBackgroundImage.
 	 * @param graphpad
-	 * @param name
 	 */
 	public GraphBackgroundImage(GPGraphpad graphpad) {
 		super(graphpad);

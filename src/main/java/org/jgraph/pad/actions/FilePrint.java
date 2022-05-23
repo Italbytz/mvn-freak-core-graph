@@ -37,7 +37,6 @@ public class FilePrint extends AbstractActionDefault {
 	/**
 	 * Constructor for FilePrint.
 	 * @param graphpad
-	 * @param name
 	 */
 	public FilePrint(GPGraphpad graphpad) {
 		super(graphpad);

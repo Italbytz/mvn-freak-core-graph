@@ -93,7 +93,6 @@ public class GEMLayoutAlgorithm implements LayoutAlgorithm, GraphModelListener {
      * Key used only with clusters. Under this key a cluster has an ArrayList.
      * This list is filled with the clustered vertices.
      * @see #clusterGraph()
-     * @see #moveVerticeToCluster(CellView,CellView)
      */
     public final static String KEY_CLUSTERED_VERTICES = "Clustered Vertices";
     
@@ -101,7 +100,6 @@ public class GEMLayoutAlgorithm implements LayoutAlgorithm, GraphModelListener {
      * Key used only with clusters. Under this key vertices have the cluster
      * they belong to.
      * @see #clusterGraph()
-     * @see #moveVerticeToCluster(CellView,CellView)
      */
     public final static String KEY_CLUSTER            = "Cluster";
     
@@ -110,7 +108,6 @@ public class GEMLayoutAlgorithm implements LayoutAlgorithm, GraphModelListener {
      * indicating that this vertice is a cluster (clusters are 
      * VertexView-instances like every other cell).
      * @see #clusterGraph() 
-     * @see #isCluster()
      */
     public final static String KEY_IS_CLUSTER         = "is Cluster";
     /**
@@ -403,12 +400,10 @@ public class GEMLayoutAlgorithm implements LayoutAlgorithm, GraphModelListener {
 /******************************************************************************/
 	/**
      * Starts the Calculation of a new layout with the GEM-Algorithm
-     * @param jgraph View of Graphnodes
-     * @param graphCells List of all nodes the layout should be calculated for
+     * @param graph View of Graphnodes
      * @param configuration contains the initial values for the Algorithm
      * @see #initialize()
      * @see #calculate()
-	 * @see de.fzi.echidna.layout.LayoutAlgorithm#perform(MyJGraph,List,Properties)
 	 */
 	public void perform(JGraph    graph,
                          boolean   applyToAll,
@@ -1825,8 +1820,6 @@ public class GEMLayoutAlgorithm implements LayoutAlgorithm, GraphModelListener {
  * {@link #KEY_CLUSTER_INIT_POSITION}.
  * 
  * @see #declusterGraph()
- * @see #computeClusterPosition(CellView)
- * @see #moveVerticeToCluster(CellView)
  */
     protected void clusterGraph(){
         //initialisation
@@ -2052,9 +2045,9 @@ public class GEMLayoutAlgorithm implements LayoutAlgorithm, GraphModelListener {
 /******************************************************************************/
 /**
  * Returns <code><b>true</b></code> when a cell is a cluster, else 
- * <code<b>false</b></code>. A cell is a cluster when it has under it's 
+ * <code><b>false</b></code>. A cell is a cluster when it has under it's
  * attributes a attribute with the boolean value <code><b>true</b></code> under
- * the key {@link #KEY_IS_CLUSTER}.
+ * the corresponding key.
  * 
  * @param cell cell, that should be researched wheather it is a cluster or not.
  * @return <code><b>true</b></code> if cell is a cluster, else 

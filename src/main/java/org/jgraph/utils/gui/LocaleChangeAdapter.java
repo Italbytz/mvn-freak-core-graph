@@ -266,7 +266,7 @@ public class LocaleChangeAdapter
 	 *  The method will update the component 
 	 *  with the new locale values. 
 	 * 
-	 * @param oComp the concerning component
+	 * @param comp the concerning component
 	 * @see #updateContainer(Container)
 	 */
 	public static void updateComponent(Component comp) {

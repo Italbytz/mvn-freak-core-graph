@@ -43,7 +43,7 @@ public class AssignmentTreeNode extends JGpdTreeNode {
 	
 	/**
 	 * @param cell
-	 * @param allowsChildren
+	 * @param tree
 	 */
 	public AssignmentTreeNode(Object cell, JTree tree)
 	{

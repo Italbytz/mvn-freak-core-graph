@@ -37,7 +37,6 @@ public class FormatBorderNo extends AbstractActionDefault {
 	/**
 	 * Constructor for FormatBorderNo.
 	 * @param graphpad
-	 * @param name
 	 */
 	public FormatBorderNo(GPGraphpad graphpad) {
 		super(graphpad);

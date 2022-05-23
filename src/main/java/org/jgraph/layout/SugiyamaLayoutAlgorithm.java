@@ -285,7 +285,6 @@ public class SugiyamaLayoutAlgorithm implements LayoutAlgorithm {
 	 *  he follows the edge to the source and looks at the
 	 *  Cell for this source.
 	 *
-	 *  @param graphCell The current cell
 	 */
 	protected void searchRoots(
 		JGraph jgraph,
@@ -391,7 +390,6 @@ public class SugiyamaLayoutAlgorithm implements LayoutAlgorithm {
 	 *  each neighbor graph cell.
 	 *
 	 *  @param level        The level for the graphCell
-	 *  @param graphCell    The Graph Cell
 	 */
 	protected void fillLevels(
 		JGraph jgraph,
@@ -947,7 +945,6 @@ public class SugiyamaLayoutAlgorithm implements LayoutAlgorithm {
 	 * @param  currentLevel Vector which contains the CellWrappers for the current level
 	 * @param  currentIndexInTheLevel
 	 * @param  currentPriority
-	 * @param  currentWrapper The Wrapper
 	 *
 	 * @return The free GridPosition or -1 is position is not free.
 	 */
