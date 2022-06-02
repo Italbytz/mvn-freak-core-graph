@@ -12,10 +12,14 @@ import freak.core.graph.Initialization;
 import freak.core.graph.OperatorGraph;
 import freak.core.mapper.Mapper;
 import freak.core.observer.ObserverManagerInterface;
+import freak.core.population.Genotype;
 import freak.core.populationmanager.PopulationManager;
 import freak.core.random.SimpleRandomElementFactory;
+import freak.core.searchspace.AbstractSearchSpace;
 import freak.core.searchspace.SearchSpace;
 import freak.core.stoppingcriterion.StoppingCriterion;
+import freak.module.fitness.pointset.AbstractRobustRegressionFitness;
+import freak.module.searchspace.BitString;
 import freak.module.searchspace.PointSet;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
@@ -25,16 +29,83 @@ import java.util.Set;
 public class OperatorGraphCollectorTests {
 
     @Test
-    public void testGetResourceListing() {
+    public void testGetLTSGraph() {
         ScheduleInterface schedule = new MockSchedule();
+        ((MockSchedule)schedule).setGenotypeSearchSpace(new BitString(schedule));
         OperatorGraphCollector collector = new OperatorGraphCollector(schedule);
         ModuleInfo[] graphs =  collector.getPredefinedGraphs("LTSGraph.fop");
         Assertions.assertNotNull(graphs);
         Assertions.assertTrue(graphs.length > 0);
     }
 
-    private class MockSchedule implements ScheduleInterface {
+    @Test
+    public void testGetGPASGraph() {
+        ScheduleInterface schedule = new MockSchedule();
+        //((MockSchedule)schedule).setGenotypeSearchSpace(new freak.module.searchspace.BooleanFunction(schedule));
+        ((MockSchedule)schedule).setGenotypeSearchSpace(new BitString(schedule));
+        OperatorGraphCollector collector = new OperatorGraphCollector(schedule);
+        ModuleInfo[] graphs =  collector.getPredefinedGraphs("GPASGraph.fop");
+        Assertions.assertNotNull(graphs);
+        Assertions.assertTrue(graphs.length > 0);
+    }
 
+    private class MockSearchSpace extends AbstractSearchSpace {
+
+        public MockSearchSpace(ScheduleInterface schedule) {
+            super(schedule);
+        }
+
+        @Override
+        public String getName() {
+            return null;
+        }
+
+        @Override
+        public String getDescription() {
+            return null;
+        }
+
+        @Override
+        public Genotype getRandomGenotype() {
+            return null;
+        }
+
+        @Override
+        public double getSize() {
+            return 0;
+        }
+    }
+
+    private class MockRobustRegressionFitness extends
+            AbstractRobustRegressionFitness {
+
+        public MockRobustRegressionFitness(ScheduleInterface schedule) {
+            super(schedule);
+        }
+
+        @Override
+        protected double evaluateResiduals() {
+            return 0;
+        }
+
+        @Override
+        public String getDescription() {
+            return null;
+        }
+    }
+
+    private class MockSchedule implements ScheduleInterface {
+        public void setGenotypeSearchSpace(
+                SearchSpace genotypeSearchSpace) {
+            this.genotypeSearchSpace = genotypeSearchSpace;
+        }
+
+        private SearchSpace genotypeSearchSpace;
+        private EventController eventController = new EventController();
+        MockSearchSpace mockSearchSpace;
+        public MockSchedule() {
+            mockSearchSpace = new MockSearchSpace(this);
+        }
         @Override
         public int getCurrentGeneration() {
             return 0;
@@ -48,7 +119,7 @@ public class OperatorGraphCollectorTests {
 
         @Override
         public SearchSpace getPhenotypeSearchSpace() {
-            return null;
+            return mockSearchSpace;
         }
 
         @Override
@@ -58,7 +129,7 @@ public class OperatorGraphCollectorTests {
 
         @Override
         public EventController getEventController() {
-            return null;
+            return eventController;
         }
 
         @Override
@@ -73,7 +144,7 @@ public class OperatorGraphCollectorTests {
 
         @Override
         public SearchSpace getGenotypeSearchSpace() {
-            return new PointSet(this);
+            return genotypeSearchSpace;
         }
 
         @Override
@@ -143,7 +214,7 @@ public class OperatorGraphCollectorTests {
 
         @Override
         public FitnessFunction getRealFitnessFunction() {
-            return null;
+            return new MockRobustRegressionFitness(this);
         }
 
         @Override

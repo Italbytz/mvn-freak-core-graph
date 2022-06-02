@@ -19,7 +19,7 @@ repositories {
 dependencies {
     implementation 'jdom:jdom:b9'
     implementation 'io.github.italbytz:freak-core:0.3.10'
-    implementation 'io.github.italbytz:freak-modules:0.2.6'
+    implementation 'io.github.italbytz:freak-modules:0.2.7'
 
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
